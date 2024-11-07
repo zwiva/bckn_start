@@ -1,0 +1,26 @@
+### Caso 12_api.js
+GET http://localhost:1234/data/mydata
+
+### Caso POST api
+POST http://localhost:1234/newdata
+Content-Type: application/json
+
+{
+  "name": "andreita",
+  "type": "chic"
+}
+
+### cambio de archivo
+
+### Caso 13_express.js
+GET http://localhost:1234
+
+
+### Caso POST express
+POST http://localhost:1234/newdata
+Content-Type: application/json
+
+{
+  "name": "andreita",
+  "type": "chic"
+}

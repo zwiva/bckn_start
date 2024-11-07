@@ -1,0 +1,38 @@
+#### recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+#### recuperar pelicula por id
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+
+#### recuperar todas las peliculas por un genero
+GET http://localhost:1234/movies?genre=drama
+
+#### crea nueva pelicula con post -> crear nuevo elemento
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather",
+  "year": 1975,
+  "director": "Francis Ford Coppola",
+  "duration": 175,
+  "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ], 
+  "otraprop":"acaaaa"
+}
+
+#### edita una pelicula (id como no esta en el schema, no lo modifica)--> actualizar parcialmente un elemento
+PATCH http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+Content-Type: application/json
+
+{
+  "id": 1234, 
+  "year": 2011
+}
+
+#### actualizar totalmente un elemento existente o crearlo si no existe
+PUT http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+

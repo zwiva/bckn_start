@@ -1,0 +1,7 @@
+{
+  "source": "mydata.json",
+  "name": "Andre",
+  "blonde": "false",
+  "colour": "purple",
+  "phone": "12345678"
+}
